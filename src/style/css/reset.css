@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: "微软雅黑","宋体","arial","Hiragino Sans GB","Microsoft Yahei","Tahoma","Helvetica","STHeiti";
+  -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=reset.css.map */
