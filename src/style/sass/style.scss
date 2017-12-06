@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import "public";
+//header 颜色背景变量
+$bgColor : #fff;
+//index 主页样式
+#header{
+    // top  login reigister begain----->
+    background-color: $bgColor;
+    .line {
+        background: #dfdfdf none repeat scroll 0 0;
+        height: 14px;
+        overflow: hidden;
+        padding: 0;
+        width: 1px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .b_down {
+        background: url(../../images/img/icon_list.png) no-repeat scroll -157px -696px;
+        height: 6px;
+        width: 10px;
+        margin-left: 5px;
+        display: inline-block;
+    }
+    .header_top{
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+        line-height: 36px;
+        color: #8c8c8c;
+        background-color: #fafafa;
+        .wrap1000{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .left_h{
+            float: left;
+        }
+        .right_h{
+            float: right;
+        }
+        .log_reg{
+            position: relative;
+        }
+    }
+    //left 
+    .log_reg a,.log_reg span{
+        font-family: "宋体";
+        display: inline-block;
+        vertical-align: middle;
+        color: #8c8c8c;
+    }
+    .left_h .a_login{
+        padding: 0 10px 0 20px;
+    }
+    .left_h .a_registetr{
+        padding-left: 8px;
+    }
+    //right
+    .right_h li{
+        float: left;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        z-index: 8;
+    }
+    li.a_enter{
+        position: relative;
+        width: 90px;
+        z-index: 10;
+        .b_down {
+            vertical-align: top;
+            margin-top: 2px;
+        }
+    }
+    .right_h a{
+        padding: 0 10px;
+    }
+    .right_h a,.right_h a span ,.sp_tel{
+        font-family: "宋体";
+        line-height: 36px;
+        display: inline-block;
+        vertical-align: middle;
+        color: #8c8c8c;
+    }
+    li .tel_icon{
+        background: url(../../images/img/icon_list.png) no-repeat 0 -38px;
+        width: 14px;
+        height: 13px;
+        margin: 0 4px 0 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    // top  login reigister over----->
+    // top search begain----->
+    
+    //top search over----->
+}
+
+
