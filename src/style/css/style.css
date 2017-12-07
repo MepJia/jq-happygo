@@ -356,4 +356,25 @@ a:hover {
   top: 0;
 }
 
+#banner {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+#banner .second_nav {
+  margin-left: -500px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 215px;
+  height: 380px;
+  z-index: 4;
+  background: url(../../images/img/index_type_bg.png);
+}
+#banner .banner_box {
+  width: 100%;
+  overflow: hidden;
+  height: 380px;
+}
+
 /*# sourceMappingURL=style.css.map */

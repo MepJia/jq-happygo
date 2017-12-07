@@ -2,13 +2,13 @@
 @import "public";
 //header 颜色背景变量
 $bgColor : #fff;
-$warpWidth : 1000px;
+$wrapWidth : 1000px;
 //index 主页样式
 #header{
     // top  login reigister begain----->
     background-color: $bgColor;
     .wrap1000{
-        width: $warpWidth;
+        width: $wrapWidth;
         margin: 0 auto;
     }
     .line {
@@ -280,5 +280,27 @@ $warpWidth : 1000px;
     }
     //top nav over----->
 }
+#banner{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    // second nav
+    .second_nav{
+        margin-left: -500px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 215px;
+        height: 380px;
+        z-index: 4;
+        background: url(../../images/img/index_type_bg.png);
+    }
+    // lunbo
+    .banner_box{
+        width: 100%;
+        overflow: hidden;
+        height: 380px;
+    } 
+}
 
-
+//index 样式完成
