@@ -227,6 +227,57 @@ $warpWidth : 1000px;
     }
     //top search over----->
     //top nav begain----->
+    .header_nav{
+        border-bottom: 2px solid #94193f;
+        height: 39px;
+        line-height: 39px;
+        .nav {
+            height: 39px;
+            float: left;
+        }
+        .nav li {
+            float: left;
+            padding: 0 30px;
+            position: relative;
+            height: 39px;
+            line-height: 39px;
+            z-index: 5;
+        }
+        .nav .li_all_type {
+            width: 215px;
+            padding: 0;
+            text-align: center;
+            background-color: #94193f;
+        }
+        .nav li a {
+            color: #303030;
+            font-size: 16px;
+        }
+        .nav .li_all_type a, .nav .li_all_type a:link, .nav .li_all_type a:visited {
+            color: #fff;
+            font-size: 16px;
+            float: left;
+            padding-left: 55px;
+            letter-spacing: 2px;
+        }
+        .nav li .b_down {
+            background: url(../../images/img/icon_list.png) no-repeat -36px -128px;
+            height: 8px;
+            width: 16px;
+            position: absolute;
+            right: 16px;
+            top: 19px;
+        }
+        .nav .on a{
+            color: #94193f;
+            font-weight: bold;
+        }
+        .nav .tv_hot {
+            position: absolute;
+            right: -3px;
+            top: 0;
+        }
+    }
     //top nav over----->
 }
 

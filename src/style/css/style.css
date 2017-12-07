@@ -304,5 +304,56 @@ a:hover {
   font-size: 12px;
   font-family: "宋体";
 }
+#header .header_nav {
+  border-bottom: 2px solid #94193f;
+  height: 39px;
+  line-height: 39px;
+}
+#header .header_nav .nav {
+  height: 39px;
+  float: left;
+}
+#header .header_nav .nav li {
+  float: left;
+  padding: 0 30px;
+  position: relative;
+  height: 39px;
+  line-height: 39px;
+  z-index: 5;
+}
+#header .header_nav .nav .li_all_type {
+  width: 215px;
+  padding: 0;
+  text-align: center;
+  background-color: #94193f;
+}
+#header .header_nav .nav li a {
+  color: #303030;
+  font-size: 16px;
+}
+#header .header_nav .nav .li_all_type a, #header .header_nav .nav .li_all_type a:link, #header .header_nav .nav .li_all_type a:visited {
+  color: #fff;
+  font-size: 16px;
+  float: left;
+  padding-left: 55px;
+  letter-spacing: 2px;
+}
+#header .header_nav .nav li .b_down {
+  background: url(../../images/img/icon_list.png) no-repeat -36px -128px;
+  height: 8px;
+  width: 16px;
+  position: absolute;
+  right: 16px;
+  top: 19px;
+}
+#header .header_nav .nav .on a {
+  color: #94193f;
+  font-weight: bold;
+}
+#header .header_nav .nav .tv_hot {
+  position: absolute;
+  right: -3px;
+  top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
