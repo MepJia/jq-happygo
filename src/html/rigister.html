@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>快乐购商城 - 用户注册</title>
+		<meta name="keywords" content="快乐购商城">
+		<meta name="description" content="快乐购商城">
+		<link rel="stylesheet" type="text/css" href="../style/css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/css/login_rigister.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="reg_log_header">
+			<div class="reg_wraper wrap1000 clear">
+				<div class="reg_logo">
+					<a href="index.html">
+						<img src="../images/img/logo.jpg"/>
+					</a>
+				</div>
+				<div class="reg_right">
+					<img src="../images/img/top_center1.jpg"/>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div id="reg_main">
+			<div class="reg_box clear">
+				<!--left-->
+				<div class="reg_box_left">
+					<img src="http://ecimg.happigo.com/data/upload/shop/adv/05657833660318005.jpg" alt="288"/>
+				</div>
+				<!--/right-->
+				<div class="reg_box_right">
+					<div class="rbr_box">
+						<!--h2-->
+						<div class="reg_h2 clear">
+							<h2>用户注册</h2>
+							<div class="reg_to_login">
+								已有帐号
+								<a href="login.html">在此登录</a>
+							</div>
+						</div>
+						<!--form-->
+						<div class="reg_mc">
+							<div class="form">
+								<form action="" method="post" id="register_form">
+									<div class="item item1">
+										<input type="text" class="reg_mobile itxt" id="reg_mobile" placeholder="请输入手机号码" />
+										<!--err -->
+										<div class="err_box">
+											<div class="err_msg2" style="display: block;" id="error_mobile">请输入11位手机号码</div>
+										</div>
+									</div>
+									<div class="item item2">
+										<input type="text" name="mobile_code" class="mobile_code itxt" id="mobile_code" placeholder="验证码" />
+										<a href="javascript:void(0);" class="btn_get_mcode">
+											<div id="hide_times">获取短信验证码</div>
+										</a>
+										<div class="err_box">
+											<div class="err_msg2" style="display: block;" id="error_mobile_code">
+												请输入发送给您手机上的验证码
+											</div>
+										</div>
+									</div>
+									<div class="item item3">
+										<input type="text" name="password" id="password" placeholder="请输入密码" class="itxt"/>
+										<div class="err_box">
+											<div class="err_msg2" style="display: block;" id="error_password">
+												请输入您的密码,您的密码可能为字母、数字或符号组合
+											</div>
+										</div>
+									</div>
+									<div class="item item4">
+										<input type="text" name="password_confirm" id="password_confirm" placeholder="请再次输入密码" class="itxt"/>
+										<div class="err_box">
+		                                    <div class="err_msg err_msg2" style="display: block;" id="error_password_confirm">
+		                                    	<!--<i class="icon_err"></i>-->
+		                                    	请确认您的密码,您的密码可能为字母、数字或符号组合
+		                                    </div>
+		                                </div>
+									</div>
+									<div class="item item5">
+										<input type="text" name="random_code" id="random_code" class="itxt random_code" placeholder="验证码"/>
+										<div class="err_box">
+		                                    <div class="err_msg err_msg1" style="display: block;" id="error_random_cod"><i class="icon_err"></i>请输入右侧验证码</div>
+		                                </div>
+									</div>
+									<div class="item item6">
+										<div class="register_btn">
+											<a id="register_submit" class="btn-img btn-entry" href="javascript:;">立即注册</a>
+										</div>
+										<div class="reg_agree">
+											<input type="checkbox" name="jdcheckbox" checked="checked" />
+											<label for="autoLogin">
+												注册即表示同意快乐购
+												<span>
+													<a href="http://www.happigo.com/news-7.html" target="_blank">
+														《用户服务协议》
+													</a>
+												</span>
+												条款
+											</label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="reg_log_foot" class="clear">
+			<div class="footer_bottom">
+				<div class="wrap1200">
+					<p>
+						<span class="font_arial">Copyright© 2006-2016 happigo. All Rights Reserved </span>
+						免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+						<span class="font_arial">E-Mail: service@happigo.com</span>
+						<br />
+						湘ICP备17009657号 信息网络传播视听节目许可证号：1810530
+						
+					</p>
+					<p class="footer_p">
+		                <a href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/2782875193.html" target="_blank">
+		                    <img src="http://ecimg.happigo.com/resource/web/images/foot_img3.png"></a>
+		                <a href="https://search.szfw.org/cert/l/CX20150428007576007720" target="_blank">
+		                    <img src="http://ecimg.happigo.com/resource/web/images/foot_img4.png"></a>
+		            </p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
