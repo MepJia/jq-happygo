@@ -88,13 +88,44 @@ a:hover {
   height: 0;
 }
 
+.line {
+  background: #dfdfdf none repeat scroll 0 0;
+  height: 14px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wrap1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrap1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#footer .footer_bottom p, #reg_log_foot .footer_bottom p {
+  padding-top: 10px;
+  text-align: center;
+  font-family: "宋体";
+  color: #7e7e7e;
+  line-height: 25px;
+}
+#footer .footer_bottom .font_arial, #reg_log_foot .footer_bottom .font_arial {
+  font-family: Arial;
+  color: #666666;
+}
+#footer .footer_bottom .footer_p, #reg_log_foot .footer_bottom .footer_p {
+  padding: 30px 0 40px 0;
+}
+
 #reg_log_header {
   width: 100%;
   background-color: #fff;
-}
-#reg_log_header .wrap1000 {
-  width: 1000px;
-  margin: 0 auto;
 }
 #reg_log_header .reg_wraper {
   margin-top: 30px;
@@ -313,20 +344,6 @@ a:hover {
 #reg_log_foot .footer_bottom .wrap1200 {
   width: 1200px;
   margin: 0 auto;
-}
-#reg_log_foot .footer_bottom p {
-  padding-top: 10px;
-  text-align: center;
-  font-family: "宋体";
-  color: #7e7e7e;
-  line-height: 25px;
-}
-#reg_log_foot .footer_bottom .font_arial {
-  font-family: Arial;
-  color: #666666;
-}
-#reg_log_foot .footer_bottom .footer_p {
-  padding: 30px 0 40px 0;
 }
 
 /*# sourceMappingURL=login_rigister.css.map */

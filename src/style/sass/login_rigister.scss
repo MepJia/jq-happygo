@@ -7,10 +7,6 @@ $wrapWidth : 1000px;
 #reg_log_header{
     width: 100%;
     background-color: #fff;
-    .wrap1000{
-        width: 1000px;
-        margin: 0 auto; 
-    }
     .reg_wraper{
         margin-top: 30px;
         margin-bottom: 19px;
@@ -231,20 +227,6 @@ $wrapWidth : 1000px;
         .wrap1200{
             width: 1200px;
             margin: 0 auto;
-        }
-        p {
-            padding-top: 10px;
-            text-align: center;
-            font-family: "宋体";
-            color: #7e7e7e;
-            line-height: 25px;
-        }
-        .font_arial {
-            font-family: Arial;
-            color: #666666;
-        }
-        .footer_p {
-            padding: 30px 0 40px 0;
         }
     }
 }

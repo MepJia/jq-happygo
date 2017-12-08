@@ -7,19 +7,6 @@ $wrapWidth : 1000px;
 #header{
     // top  login reigister begain----->
     background-color: $bgColor;
-    .wrap1000{
-        width: $wrapWidth;
-        margin: 0 auto;
-    }
-    .line {
-        background: #dfdfdf none repeat scroll 0 0;
-        height: 14px;
-        overflow: hidden;
-        padding: 0;
-        width: 1px;
-        display: inline-block;
-        vertical-align: middle;
-    }
     .b_down {
         background: url(../../images/img/icon_list.png) no-repeat scroll -157px -696px;
         height: 6px;
@@ -41,6 +28,34 @@ $wrapWidth : 1000px;
         }
         .log_reg{
             position: relative;
+        }
+        .reg_tips{
+            color: #fff;
+            position: absolute;
+            top: 32px;
+            left: 173px;
+            width: 214px;
+            height: 34px;
+            z-index: 2;
+            background: url(../../images/img/add_r_tips.png) no-repeat 0 0;
+        }
+        .reg_tips p {
+            margin-top: 4px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 15px;
+            font-size: 12px;
+            font-family: "宋体";
+        }
+        .close_r_tips {
+            cursor: pointer;
+            position: absolute;
+            width: 10px;
+            height: 15px;
+            background: url(../../images/img/add_r_tips.png) -201.5px -41px;
+            right: 5px;
+            top: 16px;
+            z-index: 3;
         }
     }
     //left 
@@ -72,6 +87,62 @@ $wrapWidth : 1000px;
             vertical-align: top;
             margin-top: 2px;
         }
+    }
+    .enter_shop{
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    //二维码
+    .download_code{
+        position: absolute;
+        top: 38px;
+        left: -10px;
+        z-index: 15;
+        background-color: #fff;
+        border-top: 1px solid #dfdfdf;
+        .download_code_border{
+            border: 1px solid #f6f6f6;
+            box-shadow: 0 0 1px #f6f6f6;
+            padding: 5px;
+            margin-top: 5px;
+            p {
+                height: 1.2em;
+                line-height: 1.2em;
+                text-align: center;
+                color: #3b3b3b;
+            }
+        }
+        .icon_top {
+            position: absolute;
+            top: -2px;
+            width: 12px;
+            height: 8px;
+            background: url(../../images/img/icon_list.png) no-repeat -234px -592px;
+            left: 50%;
+            margin-left: -6px;
+        }
+    }
+    
+    //客服
+    .cus_center{
+        position: absolute;
+        top: 35px;
+        left: -1px;
+        z-index: 5;
+        border: 1px solid #ccc;
+        border-top: none;
+        width: 100%;
+        background-color: #fff;
+        text-align: left;
+    }
+    .cus_center a {
+        height: 25px;
+        line-height: 25px;
     }
     .right_h a{
         padding: 0 10px;
@@ -295,14 +366,230 @@ $wrapWidth : 1000px;
         z-index: 4;
         background: url(../../images/img/index_type_bg.png);
     }
+    .s_n_ul{
+        width: 100%;
+        padding-top: 5px;
+        position: relative;
+        li {
+            padding-left: 55px;
+            height: 35px;
+            line-height: 35px;
+            margin-top: 15px;
+            cursor: pointer;
+            a{
+                color: #333;
+                font-size: 14px;
+            }
+            .i_type {
+                vertical-align: middle;
+                margin-right: 5px;
+                display: inline-block;
+                background: url(../../images/img/type_icon.png) no-repeat 0 0;
+                width: 18px;
+                height: 18px;
+            }
+            .i_type_1097{
+                background-position: -0px -421px;
+            }
+            .i_type_1057 {
+                background-position: 0 -128px;
+            }
+            .i_type_1088 {
+                background-position: 0 -166px;
+            }
+            .i_type_1082 {
+                background-position: 0 -211px;
+            }
+            .i_type_1058 {
+                background-position: 0 -253px;
+            }
+            .i_type_1060 {
+                background-position: 0 -336px;
+            }
+            .i_type_1116 {
+                background-position: 0 -376px;
+            }
+            .li_snav_list{
+                position: absolute;
+                left: 215px;
+                width: 370px;
+                background-color: #fff;
+                z-index: 5;
+                padding: 20px 0 10px 15px;
+                top: 0px;
+                min-height: 351px;
+            }
+            .list_nav_box{
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+        .list_nav_box li{
+            float: left;
+            padding: 0;
+            margin: 0 0 10px 0;
+            text-align: left;
+            padding-right: 10px;
+            height: 24px;
+            line-height: 24px;
+            white-space: nowrap;
+            a{
+                padding-left: 8px;
+                color: #fff;
+                font-size: 12px;
+                background-color: #9b9093;
+                display: block;
+            }
+            a i {
+                display: inline-block;
+                background-color: #837679;
+                width: 19px;
+                text-align: center;
+                margin-left: 6px;
+            }
+        }
+    }
     // lunbo
     .banner_box{
         width: 100%;
         overflow: hidden;
         height: 380px;
-    } 
+    }
+    #banner_content .ban_pic{
+        position: relative;
+        height: 435px;
+        z-index: 1;
+        overflow: hidden;
+        li{
+            position: absolute;
+            opacity: 1;
+            z-index: 0;
+            left: -318.5px;
+        }
+    }
+    #banner_content .ban_btn{
+        bottom: 10px;
+        height: 28px;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 3;
+        .btn_all{
+            margin: 0 auto;
+            padding: 0 20px;
+            background: url(../../images/img/big_eye_bg.png) repeat;
+            width: 150px;
+            height: 28px;
+            line-height: 28px;
+            border-radius: 15px;
+            padding-left: 10px;
+//          width: 105px;
+            .on{
+                background-color: #cc2256;
+            }
+        }
+        .btn_all span{
+            cursor: pointer;
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            margin: 7.5px 5px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    }
 }
-
+//footer begin --->
+#footer{
+    background-color: #fff;
+    margin-top: 25px;
+    overflow: hidden;
+    .wrap1000{
+        margin: 0 auto;
+        width: $wrapWidth;
+    }
+    .footer0 {
+        border-bottom: 1px solid #d7d7d7;
+        img {
+            width: 1000px;
+        }
+    }
+    .footer_help {
+        padding-top: 40px;
+        .foot_h_l{
+            width: 760px;
+            float: left;
+            .help_dl{
+                padding: 0 47px 0 40px;
+                float: left;
+            }
+        }
+        .help_dl h5{
+            font-size: 14px;
+            font-weight: normal;
+            height: 31px;
+            color: #666666;
+        }
+        .help_dl a {
+            color: #666;
+            font-size: 12px;
+            height: 22px;
+            line-height: 22px;
+        }
+        .foot_h_r{
+            float: left;
+            li {
+                float: left;
+                width: 100px;
+                margin-right: 20px;
+                text-align: center;
+                h2 {
+                    color: #333333;
+                    font-size: 14px;
+                    font-weight: 600;
+                    height: 31px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+        
+    }
+    .footer_nav{
+        border-bottom: 4px solid #a90202;
+        overflow: hidden;
+        margin-top: 45px;
+        .w720{
+            width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            padding-right: 12px;
+            a {
+                font-size: 12px;
+                font-family: "宋体";
+                color: #666666;
+            }
+            .line {
+                padding-left: 14px;
+                background-color: #fff;
+                border-right: 1px solid #a9a9a9;
+            }
+        }
+    }
+    .footer_bottom{
+        background-color: #f3f3f3;
+    }
+}
+//footer over --->
 //index 样式完成
 //注册页面 + 登录页面样式
 #reg_log_header{

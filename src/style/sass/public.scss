@@ -33,3 +33,44 @@ a:hover { text-decoration: none; }
     visibility: hidden;
     height: 0;
 }
+//header 颜色背景变量
+$bgColor : #fff;
+$wrapWidth : 1000px;
+//公用 容器
+// ||
+.line {
+    background: #dfdfdf none repeat scroll 0 0;
+    height: 14px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrap1000{
+    width: $wrapWidth;
+    margin: 0 auto;
+}
+.wrap1000{
+    width: 1000px;
+    margin: 0 auto; 
+}
+//页面公用 footer-bottom 样式
+#footer,#reg_log_foot {
+    .footer_bottom{
+        p {
+            padding-top: 10px;
+            text-align: center;
+            font-family: "宋体";
+            color: #7e7e7e;
+            line-height: 25px;
+        }
+        .font_arial {
+            font-family: Arial;
+            color: #666666;
+        }
+        .footer_p {
+            padding: 30px 0 40px 0;
+        }
+    }
+}

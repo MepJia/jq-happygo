@@ -1,25 +1,9 @@
 @charset "utf-8";
 @import "public";
-//header 颜色背景变量
-$bgColor : #fff;
-$wrapWidth : 1000px;
 //index 主页样式
 #header{
     // top  login reigister begain----->
     background-color: $bgColor;
-    .wrap1000{
-        width: $wrapWidth;
-        margin: 0 auto;
-    }
-    .line {
-        background: #dfdfdf none repeat scroll 0 0;
-        height: 14px;
-        overflow: hidden;
-        padding: 0;
-        width: 1px;
-        display: inline-block;
-        vertical-align: middle;
-    }
     .b_down {
         background: url(../../images/img/icon_list.png) no-repeat scroll -157px -696px;
         height: 6px;
@@ -514,5 +498,93 @@ $wrapWidth : 1000px;
         }
     }
 }
-
+//footer begin --->
+#footer{
+    background-color: #fff;
+    margin-top: 25px;
+    overflow: hidden;
+    .wrap1000{
+        margin: 0 auto;
+        width: $wrapWidth;
+    }
+    .footer0 {
+        border-bottom: 1px solid #d7d7d7;
+        img {
+            width: 1000px;
+        }
+    }
+    .footer_help {
+        padding-top: 40px;
+        .foot_h_l{
+            width: 760px;
+            float: left;
+            .help_dl{
+                padding: 0 47px 0 40px;
+                float: left;
+            }
+        }
+        .help_dl h5{
+            font-size: 14px;
+            font-weight: normal;
+            height: 31px;
+            color: #666666;
+        }
+        .help_dl a {
+            color: #666;
+            font-size: 12px;
+            height: 22px;
+            line-height: 22px;
+        }
+        .foot_h_r{
+            float: left;
+            li {
+                float: left;
+                width: 100px;
+                margin-right: 20px;
+                text-align: center;
+                h2 {
+                    color: #333333;
+                    font-size: 14px;
+                    font-weight: 600;
+                    height: 31px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+        
+    }
+    .footer_nav{
+        border-bottom: 4px solid #a90202;
+        overflow: hidden;
+        margin-top: 45px;
+        .w720{
+            width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            padding-right: 12px;
+            a {
+                font-size: 12px;
+                font-family: "宋体";
+                color: #666666;
+            }
+            .line {
+                padding-left: 14px;
+                background-color: #fff;
+                border-right: 1px solid #a9a9a9;
+            }
+        }
+    }
+    .footer_bottom{
+        background-color: #f3f3f3;
+    }
+}
+//footer over --->
 //index 样式完成
