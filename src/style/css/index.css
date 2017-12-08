@@ -127,6 +127,34 @@ a:hover {
 #header .header_top .log_reg {
   position: relative;
 }
+#header .header_top .reg_tips {
+  color: #fff;
+  position: absolute;
+  top: 32px;
+  left: 173px;
+  width: 214px;
+  height: 34px;
+  z-index: 2;
+  background: url(../../images/img/add_r_tips.png) no-repeat 0 0;
+}
+#header .header_top .reg_tips p {
+  margin-top: 4px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  font-size: 12px;
+  font-family: "宋体";
+}
+#header .header_top .close_r_tips {
+  cursor: pointer;
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: url(../../images/img/add_r_tips.png) -201.5px -41px;
+  right: 5px;
+  top: 16px;
+  z-index: 3;
+}
 #header .log_reg a, #header .log_reg span {
   font-family: "宋体";
   display: inline-block;
@@ -154,6 +182,59 @@ a:hover {
 #header li.a_enter .b_down {
   vertical-align: top;
   margin-top: 2px;
+}
+#header .enter_shop {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#header .download_code {
+  position: absolute;
+  top: 38px;
+  left: -10px;
+  z-index: 15;
+  background-color: #fff;
+  border-top: 1px solid #dfdfdf;
+}
+#header .download_code .download_code_border {
+  border: 1px solid #f6f6f6;
+  box-shadow: 0 0 1px #f6f6f6;
+  padding: 5px;
+  margin-top: 5px;
+}
+#header .download_code .download_code_border p {
+  height: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  color: #3b3b3b;
+}
+#header .download_code .icon_top {
+  position: absolute;
+  top: -2px;
+  width: 12px;
+  height: 8px;
+  background: url(../../images/img/icon_list.png) no-repeat -234px -592px;
+  left: 50%;
+  margin-left: -6px;
+}
+#header .cus_center {
+  position: absolute;
+  top: 35px;
+  left: -1px;
+  z-index: 5;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+}
+#header .cus_center a {
+  height: 25px;
+  line-height: 25px;
 }
 #header .right_h a {
   padding: 0 10px;
@@ -371,10 +452,137 @@ a:hover {
   z-index: 4;
   background: url(../../images/img/index_type_bg.png);
 }
+#banner .s_n_ul {
+  width: 100%;
+  padding-top: 5px;
+  position: relative;
+}
+#banner .s_n_ul li {
+  padding-left: 55px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#banner .s_n_ul li a {
+  color: #333;
+  font-size: 14px;
+}
+#banner .s_n_ul li .i_type {
+  vertical-align: middle;
+  margin-right: 5px;
+  display: inline-block;
+  background: url(../../images/img/type_icon.png) no-repeat 0 0;
+  width: 18px;
+  height: 18px;
+}
+#banner .s_n_ul li .i_type_1097 {
+  background-position: -0px -421px;
+}
+#banner .s_n_ul li .i_type_1057 {
+  background-position: 0 -128px;
+}
+#banner .s_n_ul li .i_type_1088 {
+  background-position: 0 -166px;
+}
+#banner .s_n_ul li .i_type_1082 {
+  background-position: 0 -211px;
+}
+#banner .s_n_ul li .i_type_1058 {
+  background-position: 0 -253px;
+}
+#banner .s_n_ul li .i_type_1060 {
+  background-position: 0 -336px;
+}
+#banner .s_n_ul li .i_type_1116 {
+  background-position: 0 -376px;
+}
+#banner .s_n_ul li .li_snav_list {
+  position: absolute;
+  left: 215px;
+  width: 370px;
+  background-color: #fff;
+  z-index: 5;
+  padding: 20px 0 10px 15px;
+  top: 0px;
+  min-height: 351px;
+}
+#banner .s_n_ul li .list_nav_box {
+  width: 100%;
+  overflow: hidden;
+}
+#banner .s_n_ul .list_nav_box li {
+  float: left;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: left;
+  padding-right: 10px;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+#banner .s_n_ul .list_nav_box li a {
+  padding-left: 8px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #9b9093;
+  display: block;
+}
+#banner .s_n_ul .list_nav_box li a i {
+  display: inline-block;
+  background-color: #837679;
+  width: 19px;
+  text-align: center;
+  margin-left: 6px;
+}
 #banner .banner_box {
   width: 100%;
   overflow: hidden;
   height: 380px;
+}
+#banner #banner_content .ban_pic {
+  position: relative;
+  height: 435px;
+  z-index: 1;
+  overflow: hidden;
+}
+#banner #banner_content .ban_pic li {
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+  left: -318.5px;
+}
+#banner #banner_content .ban_btn {
+  bottom: 10px;
+  height: 28px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+#banner #banner_content .ban_btn .btn_all {
+  margin: 0 auto;
+  padding: 0 20px;
+  background: url(../../images/img/big_eye_bg.png) repeat;
+  width: 150px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+#banner #banner_content .ban_btn .btn_all .on {
+  background-color: #cc2256;
+}
+#banner #banner_content .ban_btn .btn_all span {
+  cursor: pointer;
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin: 7.5px 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
