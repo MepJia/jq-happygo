@@ -387,5 +387,147 @@
 			</div>
 		</div>
 		<!--foot over-->
+		<!--search begin-->
+		<div class="search_fixed" style="display: none;">
+		    <div class="wrap1000">
+		        <div class="s_fixed_l">
+		            <img src="http://ecimg.happigo.com/resource/web/images/search_fixed_logo.png">
+		        </div>
+		        <div class="s_fixed_r">
+		            <form id="form2">
+		                <input autocomplete="off" placeholder="阿胶" class="txt_f_sb" type="text" name="keyword" id="keyword_fix">
+		                <input type="button" value="搜索" hc="阿胶" class="f_btn_search" style="cursor:pointer">
+		            </form>
+		            <div class="search_list" style="display: none;"><ul></ul></div>
+		        </div>
+		    </div>
+		</div>
+		<!--search end-->
+		<!--silde right begin-->
+		<div class="right_slide r_s_fixed">
+			<div class="r_s_content">
+				<div class="r_s_c_top">
+					<!--user-->
+					<div class="r_s_list r_s_uc">
+						<a href="javascript:;" class="a_account">
+							<i class="icon_user"></i>
+							<div class="r_s_list_wz wz_39">账号</div>
+						</a>
+						<div class="h-line">
+							<span class="line_1"></span>
+							<span class="line_2"></span>
+						</div>
+						<div class="r_s_list_tc user_center" style="display: none;">
+							<!--close-->
+							<div class="r_s_close"></div>
+							<!--login-->
+							<div class="r_s_login">
+								<form action="" id="login_form">
+									<div class="login_form_title">欢迎来到快乐购</div>
+									<div class="item item1">
+										<input type="text" class="reg_mobile itxt" id="reg_mobile" placeholder="请输入手机号码" />
+										<!--err -->
+										<div class="err_box">
+											<div class="err_msg2" style="display: block;" id="error_mobile">请输入11位手机号码</div>
+										</div>
+									</div>
+									<div class="item item2">
+										<input type="text" name="password" id="password" placeholder="请输入密码" class="itxt"/>
+										<div class="err_box">
+											<div class="err_msg2" style="display: block;" id="error_password">
+												请输入您的密码,您的密码可能为字母、数字或符号组合
+											</div>
+										</div>
+									</div>
+									<div class="enter_uc uc_login">
+							            <a id="loginsubmit" href="javascript:void(0);">立即登录</a>
+						            </div>
+		                            <div class="pwd_reg">
+					                    <a class="a_fpwd" href="#">忘记密码？</a>
+					                    <a class="a_reg" href="rigister.html">立即注册</a>
+					                </div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--car-->
+					<div class="r_s_list">
+						<a class="a_car" href="cart.html" target="_blank">
+			              <i class="icon_car" id="shopCart"></i>
+			              <div class="r_s_list_wz">购物车</div>
+			              <div class="car_num">0</div>
+			              <div class="ani_num">1</div>
+			            </a>
+						<div class="h-line">
+							<span class="line_1"></span>
+							<span class="line_2"></span>
+						</div>
+					</div>
+					<!--收藏-->
+					<div class="r_s_list">
+						<a href="#" target="_blank">
+			                <i class="icon_collect"></i>
+			                <div class="r_s_list_wz wz_39">收藏</div>
+			            </a>
+					</div>
+				</div>
+				<div class="r_s_c_bot">
+					<div class="r_s_list pos_relative">
+						<a href="javascript:void(0)" class="s_c_b_bg s_c_b_ewm">
+			                <div class="ewm_img"></div>
+			            </a>
+			            <div class="ewm_tc s_c_list_tc"  style="display: none;">
+			                <div class="ewm_tc_bg">
+			                    <div class="down_app_icon"></div>
+			                    <img src="http://ecimg.happigo.com/resource/web/images/down_app_ewm.png" style="">
+			                </div>
+			            </div>
+					</div>
+					<div class="r_s_list pos_relative r_s_list_online">
+						<a href="javascript:void(0)" class="f_c_b_bg f_c_b_kf">
+			                <div class="online_cus"></div>
+			            </a>
+			            <div class="online_cus_tc s_c_list_tc" style="display: none;">
+			              <div class="cus_tc_bg">
+			              <div>
+			                <p class="kf_title">商品/订单</p>
+			                <p class="kf_con_bg">
+			                  <a onclick="onlineCustomerService1('57','','web_product');" class="looyu" href="javascript://">商品咨询</a>
+			                  <a onclick="onlineCustomerService1('57','','web_pay');" class="looyu" href="javascript://">订单支付</a>
+			                  <a onclick="onlineCustomerService1('57','','web_peisong');" class="looyu" href="javascript://">配送查询</a>
+			                  <a onclick="onlineCustomerService1('57','','web_order');" class="looyu" href="javascript://">订单查询</a>
+			                </p>
+			                <p class="kf_title">优惠/政策</p>
+			                <p class="kf_con_bg">
+			                  <a onclick="onlineCustomerService1('58','','web_product');" class="looyu" href="javascript://">个帐查询</a>
+			                  <a onclick="onlineCustomerService1('58','','web_pay');" class="looyu" href="javascript://">活动咨询</a>
+			                </p>
+			                <p class="kf_title">账户服务</p>
+			                <p class="kf_con_bg">
+			                  <a onclick="onlineCustomerService1('60','','web_account');" class="looyu" href="javascript://">账号咨询</a>
+			                  <a onclick="onlineCustomerService1('60','','web_pass');" class="looyu" href="javascript://">密码找回</a>
+			                </p>
+			                <p class="kf_title">售后服务</p>
+			                <p class="kf_con_bg">
+			                  <a onclick="onlineCustomerService1('59','','web_tuikuan');" class="looyu" href="javascript://">退款查询</a>
+			                  <a onclick="onlineCustomerService1('59','','web_tuihuo');" class="looyu" href="javascript://">取消/退换货</a>
+			                  <a onclick="onlineCustomerService1('59','','web_shouhou');" class="looyu" href="javascript://">售后处理</a>
+			                  <a onclick="onlineCustomerService1('59','','web_tousu');" class="looyu" href="javascript://">投诉建议</a>
+			                </p>
+			                
+			              </div>
+			            </div>
+			          </div>
+					</div>
+					<div class="r_s_list">
+						<a href="javascript:void(0);" id="gotop" style="opacity: 1;">
+				          <div class="retrun_top"></div>
+				          <div class="arial_10">TOP</div>
+				        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--slide right over-->
 	</body>
 </html>

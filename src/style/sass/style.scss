@@ -590,6 +590,363 @@ $wrapWidth : 1000px;
     }
 }
 //footer over --->
+//right 侧边栏
+.r_s_fixed {
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    background-color: #444851;
+    height: 100%;
+    z-index: 50;
+    min-height: 600px;
+    .r_s_content{
+        position: relative;
+        height: 100%;
+        z-index: 50;
+        .r_s_c_top{
+            position: absolute;
+            top: 50%;
+            height: 360px;
+            margin-top: -270px;
+            right: 0;
+            z-index: 20; 
+        }
+        .r_s_c_bot{
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+        }
+        .r_s_list{
+            margin: 5px 0;
+            cursor: pointer;
+            a {
+                display: block;
+                padding: 5px 0;
+            }
+        }
+    }
+    .r_s_c_top {
+        .r_s_list_wz{
+            width: 17px;
+            padding: 0 11px;
+            color: #fff;
+        }
+        .wz_39 {
+            width: 39px;
+            padding: 5px 0 0 0;
+            text-align: center;
+        }
+        .line_1,.line_2{
+            display: block;
+            width: 100%;
+            height: 1px;
+        }
+        .line_1 {
+            background-color: #2d2e32;
+            margin-top: 15px;
+        }
+        .line_2 {
+            background-color: #575a62;
+            margin-bottom: 15px;
+        }
+    }
+    .r_s_c_top .r_s_uc{
+        position: relative;
+        z-index: 30;
+        .a_account{
+            padding: 5px 0;
+        }
+        .icon_user {
+            display: block;
+            background: url(../../images/img/icon_list.png) -190px -413px;
+            width: 30px;
+            height: 23px;
+            margin: 0;
+        }
+        .user_center{
+            background-color: #fff;
+            border-bottom: 1px solid #f0f0f0;
+            border-left: 1px solid #f0f0f0;
+            border-top: 1px solid #f0f0f0;
+            position: absolute;
+            right: 40px;
+            top: -10px;
+            width: 289px;
+            z-index: 10;
+            zoom: 1;
+        }
+        .r_s_close{
+            cursor: pointer;
+            height: 14px;
+            position: absolute;
+            right: 3px;
+            top: 5px;
+            width: 14px;
+            background: url(../../images/img/icon_list.png) no-repeat 0 -686px;
+        }
+        //此处应该采用登样式
+        //user
+        .login_form_title{
+            color: #c41f3a;
+            height: 25px;
+            line-height: 25px;
+            margin: 0 5px;
+            padding: 8px 0 9px 15px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .r_s_login .item {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .item .itxt {
+            color: #333333;
+            border: 1px solid #c8c8c8;
+            height: 24px;
+            line-height: 24px;
+            padding: 7px 0 7px 6px;
+            width: 236px;
+            font-size: 12px;
+        }
+        .item .err_box {
+            height: 23px;
+            line-height: 23px;
+            margin-bottom: 3px;
+            overflow: hidden;
+            padding: 0;
+            width: 100%;
+        }
+        .item .err_msg2 {
+            color: #c4203b;
+            padding: 0;
+            position: relative;
+            height: 23px;
+            line-height: 23px;
+            text-align: left;
+            width: 275px;
+            font-size: 12px;
+        }
+        .uc_login {
+            padding: 0;
+            a {
+                background-color: #94193f;
+                color: #fff;
+                display: block;
+                font-family: 宋体;
+                font-size: 14px;
+                font-weight: bold;
+                height: 30px;
+                line-height: 30px;
+                width: 258px;
+            }
+        }
+        .enter_uc {
+            margin-left: 15px;
+            margin-top: 0px;
+        }
+        .pwd_reg {
+            overflow: hidden;
+            padding: 0px 15px 0 15px;
+        }
+        .pwd_reg .a_fpwd {
+            color: #767676;
+        }
+        .pwd_reg a {
+            float: left;
+        }
+        .pwd_reg .a_reg {
+            color: #94193f;
+            float: right;
+        }
+    }
+    //car
+    .r_s_c_top .icon_car {
+        display: block;
+        background: url(../../images/img/icon_list.png) -76px 0;
+        width: 40px;
+        height: 25px;
+        transform: scale(0.95);
+        text-align: center;
+    }
+    .r_s_c_top .car_num {
+        color: #fff;
+        background: url(../../images/img/icon_list.png) -84px -65px;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        margin: 14px 9px 0 9px;
+    }
+    .r_s_c_top .ani_num {
+        color: #fff;
+        background: url(../../images/img/icon_list.png) -84px -65px;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        margin: 0 9px;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        z-index: 3;
+        opacity: 0;
+    }
+    .r_s_c_top .icon_collect {
+        display: block;
+        background: url(../../images/img/icon_list.png) -83px -188px;
+        width: 22px;
+        height: 21px;
+        margin: 0 9px;
+    }
+    .pos_relative {
+        position: relative;
+    }
+    .r_s_c_bot .ewm_img {
+        display: block;
+        background: url(../../images/img/icon_list.png) -170px 0;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+    .r_s_c_bot .ewm_tc {
+        position: absolute;
+        right: 39px;
+        bottom: -40px;
+        .ewm_tc_bg {
+            border-radius: 5px;
+            color: #000;
+            height: 271px;
+            padding: 10px;
+            text-align: center;
+            width: 173px;
+        }
+        .down_app_icon {
+            position: absolute;
+            right: -8px;
+            bottom: 51px;
+            height: 16px;
+            width: 8px;
+            z-index: 55;
+            background: url(../../images/img/icon_list.png) no-repeat -3px -585px;
+        }
+        
+    }
+    .r_s_c_bot .r_s_list_online{
+        margin: 20px 0;
+        .online_cus {
+            display: block;
+            background: url(../../images/img/icon_list.png) -170px -58px;
+            width: 22px;
+            height: 32px;
+            margin: 5px 3px 5px 8px;
+        }
+        .online_cus_tc {
+            position: absolute;
+            right: 39px;
+            bottom: 0px;
+            transition: all 1s linear 0s;
+        }
+        .cus_tc_bg {
+            width: 240px;
+            color: #444851;
+            background-color: #fff;
+            overflow: hidden;
+            border: 1px solid #f2f2f2;
+            padding-bottom: 15px;
+        }
+        .kf_title {
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            overflow: hidden;
+            cursor: default;
+        }
+        .kf_con_bg {
+            background-color: #fbfcfd;
+            width: 100%;
+            overflow: hidden;
+            padding: 5px 0 8px 0;
+        }
+        .cus_tc_bg p a {
+            display: block;
+            width: 120px;
+            text-align: center;
+            float: left;
+            height: 25px;
+            line-height: 25px;
+            color: #444851;
+        }
+    }
+    .r_s_c_bot .retrun_top {
+        display: block;
+        background: url(../../images/img/icon_list.png) -83px -252px;
+        width: 19px;
+        height: 19px;
+        margin: 5px 10px;
+    }
+    .r_s_c_bot .arial_10 {
+        font-size: 10px;
+        font-family: Arial;
+        color: #fff;
+    }
+}
+//search begin
+.search_fixed{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    height: 52px;
+    background: url(../../images/img/search_fixed_bg.png) repeat 0 0;
+    z-index: 49;
+    .s_fixed_l {
+        float: left;
+        width: 120px;
+        padding-left: 18px;
+        padding-top: 5px;
+    }
+    .s_fixed_r {
+        float: left;
+        padding-top: 10px;
+        position: relative;
+        .txt_f_sb {
+            width: 650px;
+            border: 1px solid #fff;
+            height: 19px;
+            padding: 5px 0 5px 5px;
+            float: left;
+            font-family: "宋体";
+            font-size: 12px;
+            color: #666666;
+        }
+        .f_btn_search {
+            width: 90px;
+            border: 1px solid #c41f3a;
+            background-color: #c41f3a;
+            width: 90px;
+            height: 31px;
+            line-height: 26px;
+            display: block;
+            float: left;
+            color: #fff;
+            font-size: 16px;
+        }
+        .search_list {
+            position: absolute;
+            left: 0;
+            top: 41px;
+            border: 1px solid #eaeaea;
+            background-color: #fff;
+            width: 810px;
+        }
+    }
+}
+//search end
 //index 样式完成
 //注册页面 + 登录页面样式
 #reg_log_header{
