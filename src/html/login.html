@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../style/css/normalize.css"/>
 		<!--<link rel="stylesheet" type="text/css" href="../style/css/login_rigister.css"/>-->
 		<link rel="stylesheet" type="text/css" href="../style/css/style.css"/>
+		<script src="../js/lib/require.js" data-main="../js/main" type="text/javascript" async="ture" defer></script>
 	</head>
 	<body>
 		<!--header-->
@@ -46,16 +47,16 @@
 						<!--li2-->
 						<div class="radio_box">
 							<span class="s-radio">
-								<input type="radio" id="radio1" value="1">
+								<input type="radio" id="radio1" class="radio" checked="checked" name="login">
 								<label for="radio1" class="r_txt">快捷登录</label>
 							</span>
 							<span class="s-radio">
-								<input type="radio" id="radio2" value="0">
+								<input type="radio" id="radio2" class="radio" name="login">
 								<label for="radio2" class="r_txt">普通密码登录</label>
 							</span>
 						</div>
 						<!--li3-->
-						<div class="mc" style="display: none;">
+						<div class="mc" id="phone_mc" style="display: block;">
 							<div class="form">
 								<form action="" id="login_sms_form" method="post">
 									<div class="item item1">
@@ -99,7 +100,7 @@
 		                    </div>						
 						</div>
 						<!--li4-->
-						<div class="mc" style="display: block;">
+						<div class="mc" id="pwd_mc" style="display: none;">
 							<div class="form">
 								<form action="" id="login_sms_form" method="post">
 									<div class="item item1">
@@ -110,7 +111,7 @@
 										</div>
 									</div>
 									<div class="item item2">
-										<input type="text" name="password" id="password" placeholder="请输入密码" class="itxt"/>
+										<input type="password" name="password" id="password" placeholder="请输入密码" class="itxt"/>
 										<div class="err_box">
 											<div class="err_msg2" style="display: block;" id="error_password">
 												请输入您的密码,您的密码可能为字母、数字或符号组合

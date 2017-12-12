@@ -8,6 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="../style/css/normalize.css"/>
 		<!--<link rel="stylesheet" type="text/css" href="../style/css/login_rigister.css"/>-->
 		<link rel="stylesheet" type="text/css" href="../style/css/style.css"/>
+		<script src="../js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/rigister.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--头部-->
@@ -44,37 +46,37 @@
 						<!--form-->
 						<div class="reg_mc">
 							<div class="form">
-								<form action="" method="post" id="register_form">
+								<form method="post" id="register_form" >
 									<div class="item item1">
 										<input type="text" class="reg_mobile itxt" id="reg_mobile" placeholder="请输入手机号码" />
 										<!--err -->
 										<div class="err_box">
-											<div class="err_msg2" style="display: block;" id="error_mobile">请输入11位手机号码</div>
+											<div class="err_msg2" style="display: none;" id="error_mobile">请输入11位手机号码</div>
 										</div>
 									</div>
-									<div class="item item2">
+									<!--<div class="item item2">
 										<input type="text" name="mobile_code" class="mobile_code itxt" id="mobile_code" placeholder="验证码" />
 										<a href="javascript:void(0);" class="btn_get_mcode">
 											<div id="hide_times">获取短信验证码</div>
 										</a>
 										<div class="err_box">
-											<div class="err_msg2" style="display: block;" id="error_mobile_code">
+											<div class="err_msg2" style="display: none;" id="error_mobile_code">
 												请输入发送给您手机上的验证码
 											</div>
 										</div>
-									</div>
+									</div>-->
 									<div class="item item3">
-										<input type="text" name="password" id="password" placeholder="请输入密码" class="itxt"/>
+										<input type="password" name="password" id="password" placeholder="请输入密码" class="itxt"/>
 										<div class="err_box">
-											<div class="err_msg2" style="display: block;" id="error_password">
+											<div class="err_msg2" style="display: none;" id="error_password">
 												请输入您的密码,您的密码可能为字母、数字或符号组合
 											</div>
 										</div>
 									</div>
 									<div class="item item4">
-										<input type="text" name="password_confirm" id="password_confirm" placeholder="请再次输入密码" class="itxt"/>
+										<input type="password" name="password_confirm" id="password_confirm" placeholder="请再次输入密码" class="itxt"/>
 										<div class="err_box">
-		                                    <div class="err_msg err_msg2" style="display: block;" id="error_password_confirm">
+		                                    <div class="err_msg err_msg2" style="display: none;" id="error_password_confirm">
 		                                    	<!--<i class="icon_err"></i>-->
 		                                    	请确认您的密码,您的密码可能为字母、数字或符号组合
 		                                    </div>
@@ -82,8 +84,10 @@
 									</div>
 									<div class="item item5">
 										<input type="text" name="random_code" id="random_code" class="itxt random_code" placeholder="验证码"/>
+										<span id="idcode" class="idcode"></span>
+						    			<i class="pis">刷新</i>
 										<div class="err_box">
-		                                    <div class="err_msg err_msg1" style="display: block;" id="error_random_cod"><i class="icon_err"></i>请输入右侧验证码</div>
+		                                    <div class="err_msg err_msg1" style="display: none;" id="error_random_cod"><i class="icon_err"></i>请输入右侧验证码</div>
 		                                </div>
 									</div>
 									<div class="item item6">

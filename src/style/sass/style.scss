@@ -20,6 +20,10 @@ $wrapWidth : 1000px;
         line-height: 36px;
         color: #8c8c8c;
         background-color: #fafafa;
+        a:hover {
+            text-decoration: underline;
+            color: #c41f3a;
+        }
         .left_h{
             float: left;
         }
@@ -129,6 +133,17 @@ $wrapWidth : 1000px;
     }
     
     //客服
+    
+    .custom_service{
+        border-left: 1px solid #fafafa;
+        border-right: 1px solid #fafafa;
+        margin-left: 5px;
+    }
+    .cus_border{
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background-color: #fff;
+    }
     .cus_center{
         position: absolute;
         top: 35px;
@@ -1049,6 +1064,24 @@ $wrapWidth : 1000px;
     }
     .item .mobile_code,.item .random_code{
         width: 157px;
+    }
+    .item5 span{
+        background-color: #9B9093;
+        display: block;
+        font-size: 20px;
+        width: 78px;
+        border: 1px solid #c8c8c8;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        float: right;
+        padding: 7px 0 7px 6px;
+    }
+    .item5 .pis{
+        padding-left: 7px;
+        background: 0 0;
+        color: #999;
+        cursor: pointer;
     }
     .item2 a{
         margin-left: 11px;
