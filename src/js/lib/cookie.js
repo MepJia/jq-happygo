@@ -20,3 +20,26 @@
 		function delCookie(key,value){
 			addCookie(key,value,-1);//添加的函数,将时间设置为过去时间
 		}
+//获取所有cookie
+		function getCookieAll() {
+		    var result = {};
+		    var str = document.cookie; // 1  aaa=bbb;ccc=ddd    2.  aaa=ccc
+		
+		    if (str.indexOf(";") != -1) {
+		        //2+
+		        var doubleArr = str.split(";");  // [aaa=bbb,ccc=ddd]
+		        for (var i = 0; i < doubleArr.length; i++) {
+		            if (doubleArr[i].indexOf("=") != -1) {
+		                var arr = doubleArr[i].split("=");  // [aaa,bbb]  [ccc,ddd]
+		                result[decodeURIComponent(arr[0].trim())] = decodeURIComponent(arr[1]);
+		            }
+		        }
+		    } else {
+		        // 1    aaa=ccc
+		        if (str.indexOf("=") != -1) {
+		            var arr = str.split("=");
+		            result[decodeURIComponent(arr[0])] = decodeURIComponent(arr[1]);
+		        }
+		    }
+		    return result;
+		}

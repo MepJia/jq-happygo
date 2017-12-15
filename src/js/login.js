@@ -41,13 +41,20 @@ define(['lib/jquery','lib/cookie'],function(){
 					    	if(data!=1){
 					    		confirm("登陆失败，用户名或密码错误")?window.location.reload():"";
 			               	}else{
+			               		//存取cookie
+			               		var obj = {
+				               		phone:$("#user_name").val()
+				               	}
+				               	var saveArr = [];
+				               	saveArr.push(obj);
+				               	var date = new Date();
+				               	date.setDate(date.getDate()+7);
+				               	addCookie("login",JSON.stringify(saveArr),date);
+				               	//登陆成功  即跳转
 			               		confirm("登陆成功")?window.location.assign("index.html"):"";
 			                }
 					    }
 					})
-					var d=new Date();
-					d.setDate(d.getDate()+7);//10天后的时间
-					document.cookie="phone="+$("#user_name").val()+";expires="+d;
 				})
 				
 				
